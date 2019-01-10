@@ -1,0 +1,79 @@
+/*big tablets to 1200px*/
+@media only screen and (max-width:1200px){
+    html,body{font-size: 18px;
+    }
+    .quote-text-box{
+    width:100%;
+    padding: 0 2%;
+    }
+    .row{padding: 0 2%;}
+    .box4{width: 70%;margin-left: 15%;}
+    .box4 ul li{width:100%;margin-left: 0;text-align: center;}
+}
+
+
+/*small tablets to big tablet:768px->1023px*/
+
+@media only screen and (max-width:1023px){
+    html{
+        font-size: 18px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .long-desc{
+        width:80%;
+        margin-left:10%;
+    }
+    .container .hover-button a{ font-size: 85%;}
+    .box1 ion-icon{font-size: 200%;}
+    .box1 span{font-size: 120%;}
+    .box1 p{font-size: 100%}
+    footer li{font-size: 90%;}
+    footer p{font-size:80%;padding: 2%;}
+    footer img{float:none;margin-left:40%; }
+    .box4{width: 80%;margin-left: 10%;}
+    
+    .box4 ul li{width:100%;margin-left: 0;}
+    .contact{width:80%;}
+    .picture li figure img{height: 180px;}
+    
+    
+}
+
+
+/*small phone to small tablets:481px->767px*/
+@media only screen and (max-width:767px){
+        html,body{font-size: 16px;
+    }
+    h1{font-size: 200%;}
+    h2{font-size: 150%;}
+    section{padding: 40px 0;}
+    .quote-text-box{padding: 0 4%;}
+    /*the columns will no longer side by side but will be stacked on top of each other */
+    .col{width:100%;margin:2% 0;}
+    .main-nav{display: none;}
+    footer ul{padding: 2%;}
+    .box1 span{margin: 0;bottom: 0;}
+    input[type=submit]{width:50%;margin-left: 25%;}
+    .long-desc{
+        width:100%;
+        margin-left:0;
+    }
+    
+    .box1 ion-icon{position: relative;top:12px;}
+    .picture li figure img{height: 150px;}
+    
+}
+
+
+/*small phones:0px->480px*/
+@media only screen and (max-width:480px){
+    .picture li figure img{height: 100px;}
+    .contact{width:100%;}
+    section{padding: 20px 0;}
+     h1{font-size: 150%;}
+    h2{font-size: 120%;}
+}
+
+
