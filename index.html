@@ -6,31 +6,48 @@
         
         <link rel="stylesheet" type="text/css" href="download-resources/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="download-resources/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="download-resources/css/animate.css">
         <link rel="stylesheet" type="text/css" href="project/css/style.css">
         <link rel="stylesheet" type="text/css" href="project/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400" rel="stylesheet">
+        <!--------------------->
+        <!--  *****favicon generateur****  -->
+        <!---------------------->
+        <link rel="apple-touch-icon" sizes="180x180" href="/download-resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/download-resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/download-resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/download-resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/download-resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/download-resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/download-resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         <title>one-page-project</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav >
                 <div class="row">
                     <img src="project/img/logo-white.png" alt="logo" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our Cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                    <img src="project/img/logo.png" alt="logo-black" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#food">Food delivery</a></li>
+                        <li><a href="#how">How it works</a></li>
+                        <li><a href="#cities">Our Cities</a></li>
+                        <li><a href="#signup">Sign up</a></li>
                     </ul>
+                    <a class="responsive-nav-bar js--nav-icon"><ion-icon name="menu" class="js--nav-icon-ion" ></ion-icon></a>
                 </div>
             </nav>
             <div class="quote-text-box">
                 <h1>skip the diet.<br>just eat healthy</h1>
-                <a href="#" class="btn btn-active">Get food</a>
-                <a href="#" class="btn btn-desactive">Show me more</a>
+                <!-- define two class one to css other to js-->
+                <a href="#" class="btn btn-active js--scroll-to-plan">Get food</a>
+                <a href="#" class="btn btn-desactive js--scroll-to-section-1">Show me more</a>
             </div>
         </header>
-        <section class="section-features">
+        <!-- use id to anchor the nav action with section -->
+        <section class="section-features js--section-features" id="food">
             <div class="row">
                 
                 <h2>Lorem&minus;ipsum</h2>
@@ -38,7 +55,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <ion-icon name="infinite"></ion-icon>
                     <h3>Lorem ipsum dolor sit amet</h3>
@@ -62,7 +79,7 @@
                 
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="how">
               <ul class="picture clearfix">
                   <li>
                      <figure>
@@ -112,7 +129,7 @@
                 </ul>
             
         </section>
-        <section class="back">
+        <section class="back js--wp-2" >
         <div class="row animate-number">
             <div class="col span-1-of-3 box1">
                 <ion-icon name="pizza"></ion-icon>
@@ -136,11 +153,11 @@
             
     </div>
  </section>
-        <section>
+        <section id="cities">
         <div class="row">
             <h2>Our current cities</h2>
             </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-3 box3 ">
                 <div class="container">
                 <img src="project/img/city1.jpg">
@@ -211,19 +228,19 @@
            <blockquote>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
            </blockquote>
-           <cite><img src="project/img/user%20(1).jpg">Lorem ipsum</cite>
+           <cite><img src="project/img/user%20(1).jpg" alt="customer1">Lorem ipsum</cite>
        </div>
        <div class="col span-1-of-4">
            <blockquote>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
            </blockquote>
-           <cite><img src="project/img/user%20(3).jpg">Lorem ipsum</cite>
+           <cite><img src="project/img/user%20(3).jpg" alt="customer2">Lorem ipsum</cite>
        </div>
        <div class="col span-1-of-4">
            <blockquote>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
            </blockquote>
-           <cite><img src="project/img/user%20(2).jpg">Lorem ipsum</cite>
+           <cite><img src="project/img/user%20(2).jpg" alt="customer3">Lorem ipsum</cite>
        </div>
        <div class="col span-1-of-4">
            <blockquote>
@@ -235,15 +252,15 @@
        
 </section>
         
-        <section class="section-sign-up">
+        <section class="section-sign-up js--section-sign-up" id="signup">
             <div class="row">
                <h2>Plan & Pricing</h2>
             </div>
             <div class="row">
         
             <div class="col span-1-of-2">
-                <div class="box4">
-                    <div class="price">
+                <div class="box4 js--wp-4">
+                    <div class="price ">
                         <h3>Monthly</h3>
                         <p >$400&nbsp;&nbsp;<span>/month</span></p>
                         <br>
@@ -284,7 +301,7 @@
             </div>
         
         </section>
-        <section>
+        <section class="js--add-attr">
          <div class="row">
                <h2>Contact Us </h2>   
          </div>
@@ -295,7 +312,7 @@
                     <label for="name">Name&nbsp;:</label>  
                   </div>
                     <div class="col span-2-of-3">
-                    <input class="focus" type="text" name="name" id="name" placeholder="Your name" autofocus autocomplete="off" required>
+                    <input class="focus js--autofocus" type="text" name="name" id="name" placeholder="Your name"  autocomplete="off" required>
                     </div>
                 </div>
                 <div class="row">
@@ -385,36 +402,28 @@
         
         
         
-        
+    <!--min/max-width media query polyfill-->
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <!--support html5 in all the browser:enable us to use html5 in all the browser-->
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <!--emulates CSS3 pseudo-classes(last-child,first-child,..etc) and attribute selectors in Internet Explorer 6-8.-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
         <script src="download-resources/js/jquery-3.3.1.min.js"></script>
+    <!--http://imakewebthings.com/waypoints-->
+        <script src="download-resources/js/jquery.waypoints.min.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+        <script src="project/js/script.js"></script>
         <script>
-        $('input[type="checkbox"]').on('change', function() {
+    $('input[type="checkbox"]').on('change', function() {
                  $('input[type="checkbox"]').not(this).prop('checked', false);
                    });
             
-        $('.count').each(function(){
         
-            $(this).prop('Counter',0).animate({
-                Counter:$(this).text()
-            },{
-                duration:2000,
-                easing:'swing',
-                step:function(now){
-                    $(this).text(Math.ceil(now))
-                }
-            })
-        })
             
         $('.date').text(new Date().getFullYear())
         </script>
     </body>
-    <!--min/max-width media query polyfill-->
-    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <!--support html5 in all the browser:enable us to use html5 in all the browser-->
-     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-    <!--emulates CSS3 pseudo-classes(last-child,first-child,..etc) and attribute selectors in Internet Explorer 6-8.-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+
 </html>
 
 

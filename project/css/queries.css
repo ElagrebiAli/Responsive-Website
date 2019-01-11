@@ -52,7 +52,7 @@
     .quote-text-box{padding: 0 4%;}
     /*the columns will no longer side by side but will be stacked on top of each other */
     .col{width:100%;margin:2% 0;}
-    .main-nav{display: none;}
+
     footer ul{padding: 2%;}
     .box1 span{margin: 0;bottom: 0;}
     input[type=submit]{width:50%;margin-left: 25%;}
@@ -63,7 +63,20 @@
     
     .box1 ion-icon{position: relative;top:12px;}
     .picture li figure img{height: 150px;}
-    
+    /*-----responsive nav bar -----*/
+/*comment this linge and do ur design then return display none to the main-nav because we will use jquery to modifie the display for this class*/
+    .main-nav{display: none;}
+    .logo{height: 100px;margin-top: 10px;}
+    .main-nav{float:left;margin-left: 150px;margin-top: 55px;}
+    .main-nav li{display: block;padding: 2px 0}
+    .main-nav li a {font-size: 80%;}
+    /*sticky*/
+    .sticky .responsive-nav-bar{margin-top:10px;}
+    .sticky .responsive-nav-bar ion-icon{color:#676767;}
+    .sticky .main-nav{margin-left: 190px;}
+    .responsive-nav-bar{
+        display:block;
+    }
 }
 
 

@@ -20,6 +20,7 @@ html,body{
     overflow-x: hidden;
 }
 
+/*clearfix class inside the parent of the float element*/
 .clearfix{zoom:1}
 .clearfix:after{
     content: '.';
@@ -239,6 +240,50 @@ header{
     text-transform: uppercase;
     font-size: 90%;
 }
+.logo-black{display: none;}
+
+/*sticky-nav-bar*/
+
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 2px rgba(142, 142, 142, 0.91);
+    z-index: 9999;
+}
+.sticky .main-nav li{margin-bottom: 0;padding-bottom: 15px;}
+
+.sticky .main-nav li a{ color:#676767;}
+.sticky .main-nav{  margin-top:30px;margin-bottom: 0;}
+.sticky .logo-black{
+    display: block;
+    width: auto;
+    height: 60px;
+    float: left;
+    margin: 5px 0;
+}
+.sticky .logo {display: none;}
+
+
+/*resonsive nav bar */
+.responsive-nav-bar{
+    float:right;
+    cursor: pointer;
+    margin-top:30px;
+    display: none;
+    
+}
+.responsive-nav-bar ion-icon {
+    font-size: 200%;
+    color: #fff;
+    
+    
+}
+
+
+
 
 /*----------------------------*/
 /*Gallery*/
@@ -588,3 +633,20 @@ footer p{
     text-align: center;
     padding: 1%;
 }
+
+
+/*----------------------------*/
+/*Animation*/
+/*----------------------------*/
+
+.js--wp-1{
+    opacity:0;
+}
+
+.js--wp-1 .animated{
+    opacity: 1;
+}
+js--wp-4{
+    animation-delay: 1s;
+}
+
